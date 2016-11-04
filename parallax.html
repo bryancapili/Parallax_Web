@@ -1,0 +1,248 @@
+<html>
+<head>
+	<title>parallax</title>
+	<link rel="stylesheet" type="text/css" href="parallax">
+</head>
+<style type="text/css">
+#header {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	background: #06c;
+	padding-top:50px;
+	z-index: 1000;
+	transition: height 0.3s linear 0s, padding 0.3s linear 0s;
+}
+#header > #menu {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	background: #004A95;
+	height: 70px;
+	color: #FFF;
+	font-size: 23px;
+	z-index: 1000;
+	transition: height 0.3s linear 0s;
+}
+
+
+a:link, a:visited {
+	border: 2px solid white;
+    color: white;
+    width:100px;
+    text-decoration:none;
+    font-weight:bold;
+    font-family: Calibri;
+    padding:5px;
+    padding-right: 10%;
+    margin-left: 12px;
+    transition: background-color 0.6s linear 0s,  border 0.3s linear 0s, padding-right 0.3s linear 0s;
+}
+a:hover{
+    /*background-color:#06c;*/
+    color:white;
+    border: 2px solid violet;
+    padding-right: 25%;
+
+}
+#p {
+	position: relative;
+	left: 10%;
+	bottom: 12px;
+	font-size: 30px;
+	font-family: Calibri;
+}
+#division{
+	margin-top: 6%;
+	background: url(2.jpg);
+	height: 95%;
+	width: 100%;
+	background-size: cover;
+}
+#caption {
+	font-family: Calibri;
+	font-size: 30px;
+	margin-left: 10%;
+	position: relative;
+	top: 10%;
+}
+#subtitle {
+	color: black;
+	font-size: 20px;
+	font-family: Calibri;
+	width:750px;
+}
+
+/* captio 1*/
+#division1{
+	height: 85%;
+	width: 100%;
+	background-color: #06c;
+}
+#caption1 {
+	font-family: Calibri;
+	font-size: 30px;
+	margin-left: 10%;
+	position: relative;
+	top: 10%;
+}
+#subtitle1 {
+	color: white;
+	font-size: 20px;
+	font-family: Calibri;
+	width:850px;
+}
+#link {
+	border: 2px solid white;
+	font-size: 15px;
+	padding:10px;
+	transition: border 0.3s linear 0s, padding-right 0.3s linear 0s;
+}
+#link:hover {
+	border: 2px solid violet;
+	padding-right: 15%;
+}
+/*caption 2*/
+#division2 {
+	background-color: gray;
+	height: 10%;
+	width: 100%;	
+	text-align: center;
+}
+/*caption 3*/
+#division3 {
+	background: url(3.jpg);
+	height: 95%;
+	width: 100%;
+	background-size: cover;
+}
+/*animatio begin*/
+#animation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+#animation1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation: myfirst 5s linear 2s infinite alternate; 
+    animation: myfirst 5s linear 2s infinite alternate;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    15%  {background-color:yellow; left:100px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+
+}
+ul {
+    list-style-type:none;
+    font-size: 20px;
+	transition: font-size 0.3s linear 0s;
+	position: relative;
+	left: -15%;
+}
+li {
+   float:right;
+}
+html, body {
+    		height: 100%;
+    		margin: 0;
+}
+img {
+	height: 85%;
+	width: 100%;
+}
+</style>
+<body>
+	<div id="header">
+		<div id="menu">
+			<ul id= "st">
+			  <li><a href="#home">Home</a></li>
+			  <li><a href="#news">News</a></li>
+			  <li><a href="#contact">Contact</a></li>
+			  <li><a href="#about">About</a></li>
+			</ul>
+			<p id="p">LOGO DESIGN PAINTING Inc.</p>
+		</div>
+	</div>
+	<div id="division">			
+		<div id="caption"> We Design a Logo  for Games criteria<br>
+			<p id ="subtitle">
+				LOGO DESIGN Inc. has a 30-year track record of innovating scalable, reliable, and trusted business service solutions as a global business process outsource provider. Formerly known as ASEC International, our client list includes <b>companies large and small, who have trusted us with their back office business processes for years and in some cases, decades.</b>
+			</p><br>
+			<div id="animation"></div>
+		</div>
+	</div>	
+	</div>
+	<div id="division1">
+		<div id="caption1"> Logo what it is?..<br>
+			<p id ="subtitle1">
+			A logo (abbreviation of logotype,[1] from Greek: λόγος logos "word" and τύπος typos "imprint") is a graphic mark, emblem, or symbol commonly used by commercial enterprises, organizations and even individuals to aid and promote instant public recognition. Logos are either purely graphic (symbols/icons) or are composed of the name of the organization (a logotype or wordmark).
+			</p> <br>
+			<a href="#" id="link"> See Our client</a>
+			<a href="#" id="link"> Visit our fb account</a>
+			<a href="#" id="link"> tweet us</a>
+		</div>
+	</div>
+	<div id="division3">
+		<div id="animation1"></div>
+	</div>
+	<div id="division2">
+		<br>
+		Follow us on Social Media Site
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	window.addEventListener("scroll", process, false);
+	var head, menu, st, p, pic;
+	function process() {
+		head = document.getElementById('header');
+		menu = document.getElementById('menu');
+		st = document.getElementById('st');
+		p = document.getElementById('p');
+		ypos = window.pageYOffset;
+		if (ypos > 150) {
+			head.style.height = "90px";
+			head.style.paddingTop = "9px";
+			menu.style.height = "60px";
+			st.style.fontSize = "15px";
+			p.style.fontSize = "20px";
+			//back  to  normal
+		} else {
+			head.style.height = "50px";
+			head.style.paddingTop = "50px";
+			menu.style.height = "70px";
+			st.style.fontSize = "20px";
+			p.style.fontSize = "30px";
+		}
+	}
+</script>

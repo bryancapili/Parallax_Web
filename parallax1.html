@@ -1,0 +1,175 @@
+<html>
+<head>
+	<title>sample</title>
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<style>
+#head {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	background: #06c;
+	padding-top:50px;
+	z-index: 1000;
+	transition: height 0.6s linear 0s, padding 0.3s linear 0s;
+}
+#head > #head1 {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	background: #004A95;
+	height: 70px;
+	color: #FFF;
+	font-size: 23px;
+	z-index: 1000;
+	transition: height 0.3s linear 0s;
+}
+
+a:link, a:visited {
+	text-decoration:none;
+	color:white;
+	margin-right:20px;
+	padding-right:20px;
+	padding:10px;
+	font-family:Calibri;
+	transition: background-color 0.6s linear 0s,  border 0.3s linear 0s, padding 0.3s linear 0s;
+	border: 2px solid white;
+}
+a:hover {
+	border: 2px solid violet;
+	padding-right:30px;
+}
+html, body {
+	margin: 0px;
+	height: 100%;
+}
+ul{
+	list-style-type: none;
+	margin-right:10%;
+	transition: font-size 0.3s linear 0s;
+}
+li{
+	float:right;
+}
+#logo{
+	font-family:Calibri;
+	position: relative;
+	right:-10%;
+}
+/*categ*/
+#image {
+	background:url(1.jpg);
+	height:80%;
+	width :100%;
+	margin-top:5%;
+}
+/*for bgcolor*/
+#categ {
+	background: #06c;
+	height:80%;
+	width :100%;
+	font-family:Calibri;
+
+}
+/*.imagehov {
+	height: 100px;
+	width: 100px;
+	position: relative;
+	transition: height 0.3s linear 0s;
+}	
+
+#det > a {
+	border: 0px solid white;
+}
+.imghov:hover .imagehov {
+	height: 400px;
+	width: 500px;
+	position:absolute;
+	}*/
+#subtitle {
+	margin-right: -20%;
+	font-size:33px;
+	font-family:Calibri;
+	width:450px;
+	margin-left:20%;
+	position:relative;
+	top:10%;
+}
+#s {
+	font-size:20px;
+	color:white;
+}
+/*image*/
+#image1 {
+	background:url(2.jpg);
+	height:80%;
+	width:100%;
+}
+/*footer*/
+#footer {
+	background: gray;
+	height:10%;
+	width:100%;
+}
+</style>
+<body>
+	<div id="head">
+		<div id="head1">
+			<ul  id = "list">
+				<li><a href="">Home</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">News</a></li>
+			</ul>
+			<p id="logo">Logo Design Inc.<p>
+		</div>		
+	</div>
+	<div id="image">
+		
+	</div>
+	<div id="categ">
+		<div id="subtitle">
+			 WE are happy to serve You
+			<p id="s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<!-- <div id="det">
+				<a href="#" class="imghov"><img class ="imagehov"src="3.jpg"></a>
+			</div>
+			 -->
+		</div>
+	</div>
+	<div id="image1">
+		
+	</div>
+	<div id="footer">
+	
+	</div>
+</body>
+</html>
+<script>
+	window.addEventListener("scroll", p, false);
+	var a1, a2, a3, a4;
+	function p(){
+		a1 = document.getElementById('head');
+		a2 = document.getElementById('head1');
+		a3 = document.getElementById('list');
+		a4 = document.getElementById('logo');
+		ypos = window.pageYOffset;
+		if (ypos > 150  ) {
+			a1.style.height = "20px";
+			a2.style.height = "70px";
+			a3.style.fontSize = "20px";
+			a4.style.fontSize ="20px";
+		} else {
+			a1.style.height = "50px";
+			a2.style.height = "70px";
+			a3.style.fontSize = "23px";
+			a4.style.fontSize ="23px";
+		}
+	}
+</script>
